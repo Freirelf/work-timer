@@ -112,6 +112,13 @@ export const StartCountdownButton = styled(BaseCountdownButton)`
   }
 `;
 
+export const StopCountdownButton = styled(BaseCountdownButton)`
+  background: ${(props) => props.theme["red-500"]};
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme["red-700"]};
+  }
+`
+
 export const MinutesAmountInput = styled(BaseInput)`
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
